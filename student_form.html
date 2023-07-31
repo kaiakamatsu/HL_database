@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        /* Center the form container */
+        .form-container {
+            width: 400px;
+            /* Set the desired width of the form container */
+            margin: 0 auto;
+            /* Use auto margins to center horizontally */
+        }
+
+        /* Additional styling for the form */
+        h2 {
+            text-align: center;
+            /* Center the heading */
+            font-family: 'Courier', sans-serif;
+        }
+
+        label {
+            display: block;
+            /* Place labels on separate lines for better spacing */
+            margin-bottom: 10px;
+            font-family: 'Courier', sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            /* Set the input fields and textarea to use full width */
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            /* Place the submit button on a separate line */
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #888, #3e3636);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: 'Verdana', sans-serif;
+            transition: background-color 0.3s ease; /* Add a transition for the background color */
+        }
+
+        /* Hover styles for the submit button */
+        input[type="submit"]:hover {
+            background: linear-gradient(to right, #3e3636, #888);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Student Interest Form</h2>
+        <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="major">Major:</label>
+                <input type="text" id="major" name="major" required><br><br>
+            
+                <label for="education">Education:</label>
+                <select id="education" name="education" required>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                </select><br><br>
+            
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br><br>
+            
+                <label for="work_experience">Primary Work Experience:</label>
+                <textarea id="work_experience" name="work_experience" rows="4" required></textarea><br><br>
+            
+                <label for="interest">Interest:</label>
+                <textarea id="interest" name="interest" rows="4" required></textarea><br><br>
+            
+                <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
