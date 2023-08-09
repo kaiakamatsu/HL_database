@@ -61,7 +61,7 @@
 <body>
     <div class="form-container">
         <h2>Student Interest Form</h2>
-        <form action="/submit" method="post">
+        <form action="C:/Users/kaiak/hl_database/HL_database/submit.php" method="post"> 
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
             
@@ -69,7 +69,54 @@
                 <input type="email" id="email" name="email" required><br><br>
             
                 <label for="major">Major:</label>
-                <input type="text" id="major" name="major" required><br><br>
+                <select id="major" name="major" required>
+                    <option value="Biology">Biology</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="ComputerScience">Computer Science</option>
+                    <option value="Bioengineering">Bioengineering</option>
+                    <option value="Bioinformatics">Bioinformatics</option>
+                    <option value="DataScience">Data Science</option>
+                    <option value="CognitiveScience">Cognitive Science</option>
+                    <option value="ComputerEngineering">Computer Engineering</option>
+                    <option value="Business/Economics">Business/Economics</option>
+                    <option value="ElectricalEngineering">Electrical Engineering</option>
+                    <option value="Physics">Physics</option>
+                    <option value="MechanicalEngineering">Mechanical Engineering</option>
+                    <option value="AerospaceEngineering">Aerospace Engineering</option>
+                    <option value="NanoEngineering">NanoEngineering</option>
+                    <option value="StructuralEngineering">Structural Engineering</option>
+                    <option value="Global/PublicHealth">Global/Public Health</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="ProbabilityStatistics">Probability&Statistics</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Sociology">Sociology</option>
+                    <option value="PoliticalScience">Political Science</option>
+                </select><br><br>
+
+                <label for="secondary">Minor or Double Major:</label>
+                <select id="secondary" name="secondary" required>
+                    <option value="Biology">Biology</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="ComputerScience">Computer Science</option>
+                    <option value="Bioengineering">Bioengineering</option>
+                    <option value="Bioinformatics">Bioinformatics</option>
+                    <option value="DataScience">Data Science</option>
+                    <option value="CognitiveScience">Cognitive Science</option>
+                    <option value="ComputerEngineering">Computer Engineering</option>
+                    <option value="Business/Economics">Business/Economics</option>
+                    <option value="ElectricalEngineering">Electrical Engineering</option>
+                    <option value="Physics">Physics</option>
+                    <option value="MechanicalEngineering">Mechanical Engineering</option>
+                    <option value="AerospaceEngineering">Aerospace Engineering</option>
+                    <option value="NanoEngineering">NanoEngineering</option>
+                    <option value="StructuralEngineering">Structural Engineering</option>
+                    <option value="Global/PublicHealth">Global/Public Health</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="ProbabilityStatistics">Probability&Statistics</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Sociology">Sociology</option>
+                    <option value="PoliticalScience">Political Science</option>
+                </select><br><br>
             
                 <label for="education">Education:</label>
                 <select id="education" name="education" required>
@@ -88,6 +135,7 @@
                 </select><br><br>
             
                 <label for="work_experience">Primary Work Experience:</label>
+                <label style="font-size: 12px;">*use key words that highlight your skillset*</label>
                 <textarea id="work_experience" name="work_experience" rows="4" required></textarea><br><br>
             
                 <label for="interest">Interest:</label>
