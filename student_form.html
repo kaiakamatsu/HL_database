@@ -61,15 +61,16 @@
 <body>
     <div class="form-container">
         <h2>Student Interest Form</h2>
-        <form action="C:/Users/kaiak/hl_database/HL_database/submit.php" method="post"> 
+        <form action="signup.inc.php" method="POST"> 
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" name="name" placeholder="ENTER NAME" required><br><br>
             
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="text" name="email" placeholder="ENTER EMAIL" required><br><br>
             
                 <label for="major">Major:</label>
                 <select id="major" name="major" required>
+                    <option value="placeholder" disabled selected>SELECT MAJOR</option>
                     <option value="Biology">Biology</option>
                     <option value="Chemistry">Chemistry</option>
                     <option value="ComputerScience">Computer Science</option>
@@ -93,8 +94,9 @@
                     <option value="PoliticalScience">Political Science</option>
                 </select><br><br>
 
-                <label for="secondary">Minor or Double Major:</label>
-                <select id="secondary" name="secondary" required>
+                <label for="minor">Minor or Double Major:</label>
+                <select id="minor" name="minor" required>
+                    <option value="placeholder" disabled selected>SELECT MAJOR/MINOR</option>
                     <option value="Biology">Biology</option>
                     <option value="Chemistry">Chemistry</option>
                     <option value="ComputerScience">Computer Science</option>
@@ -120,12 +122,14 @@
             
                 <label for="education">Education:</label>
                 <select id="education" name="education" required>
+                    <option value="placeholder" disabled selected>SELECT EDUCATION LEVEL</option>
                     <option value="undergraduate">Undergraduate</option>
                     <option value="graduate">Graduate</option>
                 </select><br><br>
             
                 <label for="year">Year:</label>
                 <select id="year" name="year" required>
+                    <option value="placeholder" disabled selected>SELECT YEAR</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -134,14 +138,14 @@
                     <option value="6">6</option>
                 </select><br><br>
             
-                <label for="work_experience">Primary Work Experience:</label>
+                <label for="workexp">Primary Work Experience:</label>
                 <label style="font-size: 12px;">*use key words that highlight your skillset*</label>
-                <textarea id="work_experience" name="work_experience" rows="4" required></textarea><br><br>
+                <textarea id="workexp" name="workexp" rows="4" required></textarea><br><br>
             
                 <label for="interest">Interest:</label>
                 <textarea id="interest" name="interest" rows="4" required></textarea><br><br>
             
-                <input type="submit" value="Submit">
+                <input type="submit" value="submit">
         </form>
     </div>
 </body>
