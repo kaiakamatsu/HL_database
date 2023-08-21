@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Recruitment Form</title>
+    <style>
+        /* Center the form container */
+        .form-container {
+            width: 400px;
+            /* Set the desired width of the form container */
+            margin: 0 auto;
+            /* Use auto margins to center horizontally */
+        }
+
+        /* Additional styling for the form */
+        h2 {
+            text-align: center;
+            /* Center the heading */
+            font-family: 'Courier', sans-serif;
+        }
+
+        label {
+            display: block;
+            /* Place labels on separate lines for better spacing */
+            margin-bottom: 10px;
+            font-family: 'Courier', sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            /* Set the input fields and textarea to use full width */
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            /* Place the submit button on a separate line */
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #888, #3e3636);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: 'Verdana', sans-serif;
+            transition: background-color 0.3s ease;
+            /* Add a transition for the background color */
+        }
+
+        /* Hover styles for the submit button */
+        input[type="submit"]:hover {
+            background: linear-gradient(to right, #3e3636, #888);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Student Recruitment Form</h2>
+        <form action="CHANGE THIS BEFORE SUBMITTING" method="POST">
+            <label for="name">Name of Project Lead:</label>
+            <input type="text" name="name" placeholder="ENTER NAME" required><br><br>
+
+            <label for="email">Email of Project Lead:</label>
+            <input type="text" name="email" placeholder="ENTER EMAIL" required><br><br>
+
+            <label for="title">Title of the Project/Opportunity:</label>
+            <input type="text" name="title" placeholder="ENTER PROJECT TITLE" required><br><br>
+
+            <label for="description">Description of Project/Opportunity:</label>
+            <textarea id="description" name="description" rows="4" required></textarea><br><br>
+
+            <label for="length">Length of Project/Opportunity:</label>
+            <input type="text" name="length" placeholder="ENTER LENGTH" required><br><br>
+
+            <label for="nums">Number of Students Recruiting:</label>
+            <select id="nums" name="nums" required>
+                <option value="placeholder" disabled selected>SELECT NUMBER</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7+">7+</option>
+            </select><br><br>
+
+            <label>What kind of students are you looking for?</label>
+
+            <label for="major">Major:</label>
+            <select id="major" name="major" required>
+                <option value="placeholder" disabled selected>SELECT MAJOR</option>
+                <option value="Biology">Biology</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="ComputerScience">Computer Science</option>
+                <option value="Bioengineering">Bioengineering</option>
+                <option value="Bioinformatics">Bioinformatics</option>
+                <option value="DataScience">Data Science</option>
+                <option value="CognitiveScience">Cognitive Science</option>
+                <option value="ComputerEngineering">Computer Engineering</option>
+                <option value="Business/Economics">Business/Economics</option>
+                <option value="ElectricalEngineering">Electrical Engineering</option>
+                <option value="Physics">Physics</option>
+                <option value="MechanicalEngineering">Mechanical Engineering</option>
+                <option value="AerospaceEngineering">Aerospace Engineering</option>
+                <option value="NanoEngineering">NanoEngineering</option>
+                <option value="StructuralEngineering">Structural Engineering</option>
+                <option value="Global/PublicHealth">Global/Public Health</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="ProbabilityStatistics">Probability&Statistics</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Sociology">Sociology</option>
+                <option value="PoliticalScience">Political Science</option>
+            </select><br><br>
+
+            <label for="education">Education:</label>
+            <select id="education" name="education" required>
+                <option value="placeholder" disabled selected>SELECT EDUCATION LEVEL</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="graduate">Graduate</option>
+            </select><br><br>
+
+            <label for="time">Time Commitment (hours/week):</label>
+            <select id="time" name="time" required>
+                <option value="placeholder" disabled selected>SELECT TIME COMMITMENT</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+            </select><br><br>
+
+            <label for="skills">Skills and Qualifications:</label>
+            <label style="font-size: 12px;">*list ideal skills and background*</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>
