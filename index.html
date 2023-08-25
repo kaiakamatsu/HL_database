@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>landing page for HealthLink UCSD Database</title>
+
+    <style>
+        body {
+            text-align: center;
+            /* Center-align the content horizontally */
+            font-family: 'Courier', sans-serif;
+        }
+
+        /* Style for the header */
+        .header {
+            align-items: center; /* Vertically center items in the header */
+            font-size: 2.25vh;
+        }
+
+        /* Style for the logo */
+        .logo {
+            width: 25vh; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        p{
+            margin-bottom: 6vh;
+            font-size: 2vh;
+            font-weight: lighter;
+        }
+
+        /* Define a container for the buttons */
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Create two columns */
+            grid-template-rows: repeat(2, 1fr);    /* Create two rows */
+            gap: 10px;                              /* Add some spacing between buttons */
+            width: 100%;                           /* Adjust the width as needed */
+            height: 70vh;
+            margin: 0 auto;                         /* Center the container horizontally */
+        }
+
+        /* Style for the buttons */
+        .button1 {
+            padding: 20px;                 /* Add padding to make the buttons clickable */
+            text-align: center;
+            background-color: #3498db;    /* Button background color */
+            color: white;                 /* Text color */
+            font-size: 2.5vh;              /* Font size */
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier', sans-serif;
+            font-weight: bold;
+        }
+
+        .button1:hover {
+            background-color: #2980b9;
+            /* Change background image on hover */
+            background-image: url('logos/student.png'); /* Replace with your image URL */
+            background-size: contain; /* You can adjust this to 'cover', 'auto', or specific dimensions */
+            background-repeat: no-repeat;
+            background-position: center; /* Center the image within the button */
+        }
+
+        /* Style for the buttons */
+        .button2 {
+            padding: 20px;                 /* Add padding to make the buttons clickable */
+            text-align: center;
+            background-color: #3498db;    /* Button background color */
+            color: white;                 /* Text color */
+            font-size: 2.5vh;              /* Font size */
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier', sans-serif;
+            font-weight: bold;
+        }
+
+        .button2:hover {
+            background-color: #2980b9;
+            /* Change background image on hover */
+            background-image: url('logos/project.png'); /* Replace with your image URL */
+            background-size: contain; /* You can adjust this to 'cover', 'auto', or specific dimensions */
+            background-repeat: no-repeat;
+            background-position: center; /* Center the image within the button */
+        }
+
+        /* Style for the buttons */
+        .button3 {
+            padding: 20px;                 /* Add padding to make the buttons clickable */
+            text-align: center;
+            background-color: #3498db;    /* Button background color */
+            color: white;                 /* Text color */
+            font-size: 2.5vh;              /* Font size */
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier', sans-serif;
+            font-weight: bold;
+        }
+
+        .button3:hover {
+            background-color: #2980b9;
+            /* Change background image on hover */
+            background-image: url('logos/form.png'); /* Replace with your image URL */
+            background-size: contain; /* You can adjust this to 'cover', 'auto', or specific dimensions */
+            background-repeat: no-repeat;
+            background-position: center; /* Center the image within the button */
+        }
+
+        /* Style for the buttons */
+        .button4 {
+            padding: 20px;                 /* Add padding to make the buttons clickable */
+            text-align: center;
+            background-color: #3498db;    /* Button background color */
+            color: white;                 /* Text color */
+            font-size: 2.5vh;              /* Font size */
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier', sans-serif;
+            font-weight: bold;
+        }
+
+        .button4:hover {
+            background-color: #2980b9;
+            /* Change background image on hover */
+            background-image: url('logos/idea.png'); /* Replace with your image URL */
+            background-size: contain; /* You can adjust this to 'cover', 'auto', or specific dimensions */
+            background-repeat: no-repeat;
+            background-position: center; /* Center the image within the button */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="logos/HL_logo.png" alt="Logo"> 
+        <h1>The HealthLink UCSD Database</h1>
+    </div>
+
+    <p> <i>the intersection of innovative ideas and interdisciplinary talent</i> </p>
+
+    <div class="button-container">
+        <button class="button1" onclick="redirectToStudentDB()">Database of Talented Students</button>
+        <button class="button2" onclick="redirectToProfDB()">Database of Projects</button>
+        <button class="button3" onclick="redirectToStudentForm()">Student Signup Form</button>
+        <button class="button4" onclick="redirectToProfForm()">Ideas and Project Form</button>
+    </div>
+
+    <script>
+        function redirectToStudentDB() {
+            window.location.href = "filter_student_db.php";
+        }
+
+        function redirectToProfDB() {
+            window.location.href = "filter_project_db.php";
+        }
+
+        function redirectToStudentForm() {
+            window.location.href = "student_form.html";
+        }
+
+        function redirectToProfForm() {
+            window.location.href = "prof_form.html";
+        }
+    </script>
+</body>
+
+</html>
