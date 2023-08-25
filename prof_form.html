@@ -56,6 +56,28 @@
         input[type="submit"]:hover {
             background: linear-gradient(to right, #3e3636, #888);
         }
+
+        /* Style for major container */
+        .major-container {
+            display: inline-block;
+            width: 45%; /* Adjust as needed */
+            margin-right: 5%;
+        }
+
+        /* Clearfix to prevent alignment issues */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Two checkboxes per row */
+        .major-checkbox {
+            float: left;
+            width: 48%; /* Adjust as needed */
+            margin-right: 2%; /* Adjust as needed */
+        }
+
     </style>
 </head>
 
@@ -92,31 +114,116 @@
 
             <label>What kind of students are you looking for?</label>
 
+
             <label for="major">Major:</label>
-            <select id="major" name="major" required>
-                <option value="placeholder" disabled selected>SELECT MAJOR</option>
-                <option value="Biology">Biology</option>
-                <option value="Chemistry">Chemistry</option>
-                <option value="ComputerScience">Computer Science</option>
-                <option value="Bioengineering">Bioengineering</option>
-                <option value="Bioinformatics">Bioinformatics</option>
-                <option value="DataScience">Data Science</option>
-                <option value="CognitiveScience">Cognitive Science</option>
-                <option value="ComputerEngineering">Computer Engineering</option>
-                <option value="Business/Economics">Business/Economics</option>
-                <option value="ElectricalEngineering">Electrical Engineering</option>
-                <option value="Physics">Physics</option>
-                <option value="MechanicalEngineering">Mechanical Engineering</option>
-                <option value="AerospaceEngineering">Aerospace Engineering</option>
-                <option value="NanoEngineering">NanoEngineering</option>
-                <option value="StructuralEngineering">Structural Engineering</option>
-                <option value="Global/PublicHealth">Global/Public Health</option>
-                <option value="Mathematics">Mathematics</option>
-                <option value="ProbabilityStatistics">Probability&Statistics</option>
-                <option value="Psychology">Psychology</option>
-                <option value="Sociology">Sociology</option>
-                <option value="PoliticalScience">Political Science</option>
-            </select><br><br>
+            <div class="clearfix">
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Biology" name="major[]" value="Biology">
+                    <label for="Biology">Biology</label><br>
+                </div>
+            
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Chemistry" name="major[]" value="Chemistry">
+                    <label for="Chemistry">Chemistry</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="ComputerScience" name="major[]" value="ComputerScience">
+                    <label for="ComputerScience">Computer Science</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Bioengineering" name="major[]" value="Bioengineering">
+                    <label for="Bioengineering">Bioengineering</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Bioinformatics" name="major[]" value="Bioinformatics">
+                    <label for="Bioinformatics">Bioinformatics</label><br>
+                </div>
+                
+                <div class="major-checkbox">
+                    <input type="checkbox" id="DataScience" name="major[]" value="DataScience">
+                    <label for="DataScience">Data Science</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="CognitiveScience" name="major[]" value="CognitiveScience">
+                    <label for="CognitiveScience">Cognitive Science</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="ComputerEngineering" name="major[]" value="ComputerEngineering">
+                    <label for="ComputerEngineering">Computer Eng</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Business/Economics" name="major[]" value="Business/Economics">
+                    <label for="Business/Economics">Business/Economics</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="ElectricalEngineering" name="major[]" value="ElectricalEngineering">
+                    <label for="ElectricalEngineering">Electrical Eng</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Physics" name="major[]" value="Physics">
+                    <label for="Physics">Physics</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="MechanicalEngineering" name="major[]" value="MechanicalEngineering">
+                    <label for="MechanicalEngineering">Mechanical Eng</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="AerospaceEngineering" name="major[]" value="AerospaceEngineering">
+                    <label for="AerospaceEngineering">Aerospace Eng</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="NanoEngineering" name="major[]" value="NanoEngineering">
+                    <label for="NanoEngineering">Nano Eng</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="StructuralEngineering" name="major[]" value="StructuralEngineering">
+                    <label for="StructuralEngineering">Structural Eng</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="PublicHealth" name="major[]" value="PublicHealth">
+                    <label for="PublicHealth">Public Health</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Mathematics" name="major[]" value="Mathematics">
+                    <label for="Mathematics">Mathematics</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="ProbabilityStatistics" name="major[]" value="ProbabilityStatistics">
+                    <label for="ProbabilityStatistics">Probability&Statistics</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Psychology" name="major[]" value="Psychology">
+                    <label for="Psychology">Psychology</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="Sociology" name="major[]" value="Sociology">
+                    <label for="Sociology">Sociology</label><br>
+                </div>
+
+                <div class="major-checkbox">
+                    <input type="checkbox" id="PoliticalScience" name="major[]" value="PoliticalScience">
+                    <label for="PoliticalScience">Political Science</label><br>
+                </div>
+
+            </div>
+            
 
             <label for="education">Education:</label>
             <select id="education" name="education" required>
