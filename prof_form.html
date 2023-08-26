@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Recruitment Form</title>
+    <title>Project Lead Form</title>
     <style>
         /* Center the form container */
         .form-container {
@@ -83,8 +83,8 @@
 
 <body>
     <div class="form-container">
-        <h2>Student Recruitment Form</h2>
-        <form action="CHANGE THIS BEFORE SUBMITTING" method="POST">
+        <h2>Project Lead Form</h2>
+        <form action="signup.project.php" method="POST">
             <label for="name">Name of Project Lead:</label>
             <input type="text" name="name" placeholder="ENTER NAME" required><br><br>
 
@@ -97,11 +97,11 @@
             <label for="description">Description of Project/Opportunity:</label>
             <textarea id="description" name="description" rows="4" required></textarea><br><br>
 
-            <label for="length">Length of Project/Opportunity:</label>
+            <label for="length">Length of Project/Opportunity (months):</label>
             <input type="text" name="length" placeholder="ENTER LENGTH" required><br><br>
 
-            <label for="nums">Number of Students Recruiting:</label>
-            <select id="nums" name="nums" required>
+            <label for="students">Number of Students Recruiting:</label>
+            <select id="students" name="students" required>
                 <option value="placeholder" disabled selected>SELECT NUMBER</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -230,7 +230,19 @@
                 <option value="placeholder" disabled selected>SELECT EDUCATION LEVEL</option>
                 <option value="undergraduate">Undergraduate</option>
                 <option value="graduate">Graduate</option>
+                <option value="both">Both</option>
             </select><br><br>
+            
+            
+            <label for="year">Year:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="year[]" value="1"> 1</label>
+                <label><input type="checkbox" name="year[]" value="2"> 2</label>
+                <label><input type="checkbox" name="year[]" value="3"> 3</label>
+                <label><input type="checkbox" name="year[]" value="4"> 4</label>
+                <label><input type="checkbox" name="year[]" value="5"> 5</label>
+                <label><input type="checkbox" name="year[]" value="6"> 6</label><br>
+            </div>
 
             <label for="time">Time Commitment (hours/week):</label>
             <select id="time" name="time" required>
