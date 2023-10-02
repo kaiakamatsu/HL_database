@@ -72,6 +72,7 @@
                 <select id="major" name="major" required>
                     <option value="placeholder" disabled selected>SELECT MAJOR</option>
                     <option value="Biology">Biology</option>
+                    <option value="Neuroscience">Neuroscience</option>
                     <option value="Chemistry">Chemistry</option>
                     <option value="ComputerScience">Computer Science</option>
                     <option value="Bioengineering">Bioengineering</option>
@@ -98,6 +99,7 @@
                 <select id="minor" name="minor" required>
                     <option value="placeholder" disabled selected>SELECT MAJOR/MINOR</option>
                     <option value="Biology">Biology</option>
+                    <option value="Neuroscience">Neuroscience</option>
                     <option value="Chemistry">Chemistry</option>
                     <option value="ComputerScience">Computer Science</option>
                     <option value="Bioengineering">Bioengineering</option>
@@ -140,7 +142,11 @@
             
                 <label for="workexp">Primary Work Experience:</label>
                 <label style="font-size: 12px;">*use key words that highlight your skillset*</label>
-                <textarea id="workexp" name="workexp" rows="4" required></textarea><br><br>
+                <form>
+                    <p style="font-size: 12px;" id="word-count">Word count: 0/50</p>
+                    <textarea id="workexp" name="workexp" rows="4" required></textarea><br><br>
+                </form>
+                <script src="limit.js"></script>
             
                 <label for="interest">Interest:</label>
                 <textarea id="interest" name="interest" rows="4" required></textarea><br><br>
