@@ -1,0 +1,19 @@
+.container-fluid {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ellipsis {
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    height: 30px;
+    margin: 0px;
+}
+.description {
+    width: 310px;
+    background: white; 
+    padding: 3px;
+}
