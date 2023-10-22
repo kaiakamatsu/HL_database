@@ -4,24 +4,18 @@ const wordCountDisplay = document.getElementById('word-count');
 
 // Define the word limit
 const wordLimit = 50;
+wordCountDisplay.textContent = `Word count: 0/${wordLimit}`
 
-// Function to update the word count display
-function updateWordCount() {
-    const words = textarea.value.split(/\s+/).filter(word => word !== '');
+textarea.addEventListener('input', () => {
+    const text = textarea.value;
+    const words = text.trim().split(/\s+/); // Split text by whitespace to count words
     const wordCount = words.length;
 
-    wordCountDisplay.textContent = `Word count: ${wordCount}/${wordLimit}`;
-
-    // Enable or disable input based on the word limit
-    if (wordCount >= wordLimit) {
-        textInput.setAttribute('readonly', 'readonly');
+    if (wordCount > wordLimit) {
+        const truncatedText = words.slice(0, wordLimit).join(' ');
+        textarea.value = truncatedText;
+        wordCountDisplay.textContent = `Word count: ${wordLimit} (Max Reached)`;
     } else {
-        textInput.removeAttribute('readonly');
+        wordCountDisplay.textContent = `Word count: ${wordCount}/${wordLimit}`;
     }
-}
-
-// Attach an event listener to the textarea to update word count
-textarea.addEventListener('input', updateWordCount);
-
-// Initial update of the word count display
-updateWordCount();
+});
